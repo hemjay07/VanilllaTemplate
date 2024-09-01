@@ -84,6 +84,7 @@ class App {
 
       this.page.create();
       // this.onResize();
+      //
 
       this.page.show();
 
