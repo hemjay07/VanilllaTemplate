@@ -19,9 +19,16 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Define a route to render the "base" Pug template
 app.get("/", (req, res) => {
-  res.render("base");
+  res.render("pages/home");
 });
 
+app.get("/contact", (req, res) => {
+  res.render("pages/contact");
+});
+
+app.get("/details", (req, res) => {
+  res.render("pages/details");
+});
 // Start the server
 const PORT = 3000;
 app.listen(PORT, () => {
